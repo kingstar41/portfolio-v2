@@ -1,3 +1,15 @@
+@import url("https://use.typekit.net/gjb5lfx.css");
+/*****************************************
+Table Of Contents:
+  - Core Setup
+  - Base Styles
+  - Landing Page
+  - Form
+******************************************/
+
+/**********************/
+/*     Core Setup     */
+/**********************/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,5 +41,64 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer base {
+  * {
+    @apply antialiased;
+  }
+}
+
+/**********************/
+/*     Typography     */
+/**********************/
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display text-darkest font-black mb-2
+    transition-all duration-150 tracking-tight;
+  }
+  h1 {
+    @apply text-3xl sm:text-4xl md:text-6xl;
+  }
+  h2 {
+    @apply text-3xl md:text-5xl;
+  }
+  h3 {
+    @apply text-2xl md:text-4xl;
+  }
+  h4 {
+    @apply text-xl md:text-3xl;
+  }
+  h5 {
+    @apply text-base md:text-2xl;
+  }
+  h6 {
+    @apply text-sm font-bold md:text-lg;
+  }
+  p {
+    @apply font-body font-semibold text-dark;
+  }
+  a {
+    @apply text-accent hover:text-darkest font-bold;
+  }
+}
+
+@layer components {
+  .social-icon-wrapper {
+    @apply w-10 h-10 flex rounded-full items-center justify-center overflow-hidden bg-white p-3 transition-all duration-150 ease-in-out shadow-sm hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .tech-stack-wrapper {
+    @apply w-14 h-14 flex rounded-full items-center justify-center overflow-hidden bg-white p-3.5 transition-all duration-150 ease-in-out shadow-sm hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .project-link-icon-wrapper {
+    @apply w-8 h-8 flex rounded-full items-center justify-center overflow-hidden bg-transparent group-hover:bg-white transition-all duration-150 ease-in-out group-hover:shadow-lg text-white;
   }
 }
