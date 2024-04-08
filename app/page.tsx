@@ -196,7 +196,7 @@ export default function Home() {
         <article className="flex items-center gap-x-2 mt-4">
           {socialIconsData.map((socialIcon, index) => (
             <SocialIcon
-              key={index}
+              key={"socialIcon" + socialIcon.iconSlug + index}
               href={socialIcon.href}
               imageHeight={socialIcon.imageHeight}
               imageWidth={socialIcon.imageWidth}
@@ -215,17 +215,19 @@ export default function Home() {
       <section className="flex flex-col w-full lg:w-3/4 lg:ml-[28rem] min-h-screen px-14 py-10 lg:p-16 gap-y-4">
         <article className="flex flex-col border-b-2 border-light gap-y-4 pb-6">
           <h1 className="text-4xl lg:text-5xl mb-0">
-            Hey! I'm Daniel, a proud generalist who loves code, design and cats.
+            Hey! I&apos;m Daniel, a proud generalist who loves code, design and
+            cats.
           </h1>
           <p className="text-lg font-semibold mb-0">
-            Check out my products below, and get in touch if you'd like to work
-            together. 👇
+            Check out my products below, and get in touch if you&apos;d like to
+            work together. 👇
           </p>
 
           <div className="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12 gap-y-3">
-            {stackIconsData.map((stackIcon) => {
+            {stackIconsData.map((stackIcon, index) => {
               return (
                 <StackIcon
+                  key={"stackIcon" + stackIcon.iconSlug + index}
                   href={stackIcon.href}
                   iconSlug={stackIcon.iconSlug}
                   hex={stackIcon.hex}
@@ -241,9 +243,10 @@ export default function Home() {
           </div>
 
           <article className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
-            {projectsData.map((project) => {
+            {projectsData.map((project, index) => {
               return (
                 <ProjectCard
+                  key={"project" + project.title + index}
                   href={project.href}
                   imageWidth={project.imageWidth}
                   imageHeight={project.imageHeight}
@@ -264,9 +267,9 @@ export default function Home() {
           </div>
 
           <p>
-            If you'd like to collaborate on a project, I'd love to hear from
-            you. <a href="mailto:hello@danielcranney.com">Email me</a> or get in
-            touch on socials.
+            If you&apos;d like to collaborate on a project, I'd love to hear
+            from you. <a href="mailto:hello@danielcranney.com">Email me</a> or
+            get in touch on socials.
           </p>
         </article>
 
