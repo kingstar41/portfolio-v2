@@ -267,9 +267,9 @@ export default function Home() {
           </div>
 
           <p>
-            If you&apos;d like to collaborate on a project, I'd love to hear
-            from you. <a href="mailto:hello@danielcranney.com">Email me</a> or
-            get in touch on socials.
+            If you&apos;d like to collaborate on a project, I&apos;d love to
+            hear from you. <a href="mailto:hello@danielcranney.com">Email me</a>{" "}
+            or get in touch on socials.
           </p>
         </article>
 
