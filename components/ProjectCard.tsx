@@ -30,13 +30,13 @@ export const ProjectCard = ({
         width={imageWidth}
         height={imageHeight}
         alt={title}
-        className="absolute scale-[200%] blur-sm lg:blur-none group-hover:scale-[205%] lg:translate-x-1/2 lg:top-8 rounded-tl-2xl shadow-lg shadow-darkest/20 opacity-30 group-hover:opacity-50 lg:scale-100 lg:group-hover:scale-[103%] transition-all duration-300 ease-in-out z-0"
+        className="absolute scale-[200%] blur-sm lg:blur-none group-hover:scale-[205%] lg:translate-x-1/2 rounded-tl-2xl shadow-lg shadow-darkest/20 opacity-30 group-hover:opacity-50 lg:scale-100 lg:group-hover:scale-[103%] transition-all duration-300 ease-in-out z-0 lg:-bottom-1"
       />
       <div className="flex flex-col w-1/2">
         <h3 className="text-3xl text-white font-display font-extrabold z-10">
           {title}
         </h3>
-        <p className="text-white z-10 shadow-sm font-semibold">{description}</p>
+        <p className="text-white z-10 font-semibold">{description}</p>
 
         <div
           className={`project-link-icon-wrapper ${arrowIconColor} absolute right-4 bottom-4 group-hover:rotate-[360]`}
