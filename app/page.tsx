@@ -219,8 +219,8 @@ export default function Home() {
             cats.
           </h1>
           <p className="text-lg font-semibold mb-0">
-            Check out my products below, and get in touch if you&apos;d like to
-            work together. 👇
+            Check out my work below, and get in touch if you&apos;d like to work
+            together. 👇
           </p>
 
           <div className="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12 gap-y-3">
