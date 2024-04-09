@@ -1,3 +1,8 @@
+---
+title: "How to learn more effectively"
+date: "2020-01-01"
+---
+
 Learning to code is hard. Okay, let's not sugarcoat it... it's really, _really_ hard.
 
 There's a load of complex concepts to wrap your head around, syntax to learn, frameworks to add to your stack, and a never-ending stream of frustrating bugs to fix along the way.
