@@ -1,6 +1,14 @@
 ---
 title: "How to learn more effectively"
+excerpt: "This is an excerpt"
 date: "2020-01-01"
+cover: "colorhub.png"
+alt: "Description of image"
+tags:
+  - learning
+  - productivity
+  - self-improvement
+category: education
 ---
 
 Learning to code is hard. Okay, let's not sugarcoat it... it's really, _really_ hard.

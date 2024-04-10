@@ -85,8 +85,8 @@ const projectsData = [
     imageSrc: "/profileme.png",
     title: "ProfileMe",
     description: "Create an amazing GitHub profile in two minutes",
-    backgroundStyle: "bg-[#139ae1]",
-    arrowIconColor: "group-hover:text-[#139ae1]",
+    backgroundStyle: "bg-[#0968c6]",
+    arrowIconColor: "group-hover:text-[#0968c6]",
   },
   {
     href: "http://www.svghub.app",

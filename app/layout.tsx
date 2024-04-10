@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
+import Link from "next/link";
 import { SocialIcon } from "@/components/SocialIcon";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -73,14 +74,17 @@ export default function RootLayout({
       <body className="bg-lightest">
         <main className="w-full flex flex-col lg:flex-row min-h-screen items-center justify-between bg-light/30 border-t-8 lg:border-t-0 border-accent">
           <section className="relative lg:fixed top-0 left-0 w-full lg:w-[28rem] pt-12 pb-8 lg:py-16 flex items-center flex-col gap-y-4 lg:h-screen">
-            <div className="w-40 h-40 rounded-full bg-accent overflow-hidden">
+            <Link
+              href={"/"}
+              className="w-40 h-40 rounded-full bg-accent overflow-hidden"
+            >
               <Image
                 src="/headshot.png"
                 width={500}
                 height={500}
                 alt="Daniel Cranney Headshot"
               />
-            </div>
+            </Link>
             <h3 className="text-3xl mb-0 font-extrabold">Daniel Cranney</h3>
 
             <div className="flex flex-col items-center gap-y-0.5">

@@ -21,7 +21,7 @@ export const ProjectCard = ({
 }) => {
   return (
     <a
-      className={`w-full flex flex-col ${backgroundStyle} rounded-2xl shadow-lg overflow-hidden group relative items-start justify-center p-8 lg:p-4 lg:aspect-video cursor-pointer`}
+      className={`w-full flex flex-col ${backgroundStyle} rounded-2xl shadow-lg overflow-hidden group relative items-start justify-center p-8 lg:p-6 lg:aspect-video cursor-pointer`}
       href={href}
       target="_blank"
     >
