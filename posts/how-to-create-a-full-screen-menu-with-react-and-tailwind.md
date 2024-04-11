@@ -1,7 +1,7 @@
 ---
-title: "How I Overcame a Fear of Sharing My Work"
+title: "How to Create a Full-screen Menu and Animated Icon with React and Tailwind"
 excerpt: "This is an excerpt"
-date: "2021-10-10"
+date: "2021-08-20"
 cover: "colorhub.png"
 alt: "Description of image"
 tags:

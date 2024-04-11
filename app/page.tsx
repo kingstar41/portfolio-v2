@@ -110,7 +110,6 @@ const projectsData = [
   },
 ];
 
-
 export default function Home() {
   return (
     <>
@@ -125,7 +124,7 @@ export default function Home() {
           together. 👇
         </p>
 
-        <div className="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12 gap-y-3">
+        <div className="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12 gap-y-3 mt-4">
           {stackIconsData.map((stackIcon, index) => {
             return (
               <StackIcon

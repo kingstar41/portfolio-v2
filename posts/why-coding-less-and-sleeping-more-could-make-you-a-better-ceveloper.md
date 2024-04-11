@@ -1,7 +1,7 @@
 ---
 title: "Why Coding Less and Sleeping More Could Make You a Better Developer"
 excerpt: "This is an excerpt"
-date: "2020-01-01"
+date: "2021-10-23"
 cover: "colorhub.png"
 alt: "Description of image"
 tags:

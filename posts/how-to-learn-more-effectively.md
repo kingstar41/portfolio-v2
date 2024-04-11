@@ -1,7 +1,7 @@
 ---
 title: "How to learn more effectively"
 excerpt: "This is an excerpt"
-date: "2020-01-01"
+date: "2021-08-06"
 cover: "colorhub.png"
 alt: "Description of image"
 tags:

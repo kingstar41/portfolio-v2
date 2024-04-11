@@ -25,12 +25,18 @@ export default function Blog() {
 
   return (
     <>
-      <section className={``}>
-        <h2>Blog</h2>
+      <section className="flex flex-col border-b-2 border-light gap-y-4 pb-6">
+        <h1 className="text-4xl lg:text-5xl mb-0">Blog</h1>
+        <p className="text-lg font-semibold mb-0">
+          I write about coding, technology, society and culture.
+        </p>
 
-        <ul className="grid grid-cols-2 gap-8">
+        <ul className="grid grid-cols-3 gap-8 mt-4">
           {allPostsData.map(
-            ({ id, date, title, excerpt, cover, alt, tags, category }, index) => (
+            (
+              { id, date, title, excerpt, cover, alt, tags, category },
+              index
+            ) => (
               <BlogPostCard
                 index={index}
                 key={title + index}
@@ -41,8 +47,6 @@ export default function Blog() {
                 imageSrc={"/" + cover}
                 title={title}
                 excerpt={excerpt}
-                backgroundStyle={"bg-accent"}
-                arrowIconColor={"000000"}
                 category={category}
                 tags={tags}
               />

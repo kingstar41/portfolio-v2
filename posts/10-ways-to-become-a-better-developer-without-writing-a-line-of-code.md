@@ -1,7 +1,7 @@
 ---
-title: "How I Overcame a Fear of Sharing My Work"
+title: "10 Ways to Become a Better Developer Without Writing a Line of Code"
 excerpt: "This is an excerpt"
-date: "2021-10-10"
+date: "2022-07-08"
 cover: "colorhub.png"
 alt: "Description of image"
 tags:

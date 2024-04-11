@@ -36,29 +36,29 @@ Table Of Contents:
   h4,
   h5,
   h6 {
-    @apply font-display text-darkest font-black mb-2
+    @apply font-display text-darkest font-black mb-0
     transition-all duration-150 tracking-tight;
   }
   h1 {
     @apply text-3xl sm:text-4xl md:text-6xl;
   }
   h2 {
-    @apply text-3xl md:text-5xl;
+    @apply text-3xl;
   }
   h3 {
-    @apply text-2xl md:text-4xl;
+    @apply text-2xl;
   }
   h4 {
-    @apply text-xl md:text-3xl;
+    @apply text-xl;
   }
   h5 {
-    @apply text-base md:text-2xl;
+    @apply text-base;
   }
   h6 {
-    @apply text-sm font-bold md:text-lg;
+    @apply text-sm font-bold;
   }
   p {
-    @apply font-body font-semibold text-dark;
+    @apply font-body font-semibold text-darkest;
   }
   a {
     @apply text-accent hover:text-darkest font-bold;

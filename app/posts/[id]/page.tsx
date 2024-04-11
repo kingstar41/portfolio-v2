@@ -1,6 +1,8 @@
 import Date from "@/components/Date";
-
+import { useRouter } from "next/navigation";
 import { getAllPostIds, getPostData } from "@/lib/posts";
+import { IconArrowLeft } from "@tabler/icons-react";
+import { BackButton } from "@/components/BackButton";
 
 type Params = {
   id: string;
@@ -24,22 +26,22 @@ export async function generateMetadata({ params }: Props) {
   };
 }
 
-// -< Post >-
 export default async function Post({ params }: Props) {
   const postData: PostData = await getPostData(params.id);
 
   return (
     <>
-      {/* Post Title */}
-      <h1 className="font-extrabold text-3xl mb-1">{postData.title}</h1>
+      <BackButton />
 
-      <div className="text-gray-500 font-medium mb-5">
+      <h1 className="font-extrabold text-4xl mb-0">{postData.title}</h1>
+
+      <p className="font-bold text-mid">
         <Date dateString={postData.date} />
-      </div>
+      </p>
 
       {/* Post Content */}
       <div
-        className="text-gray-600"
+        className="flex flex-col gap-y-4"
         dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
       />
     </>
