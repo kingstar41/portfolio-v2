@@ -3,6 +3,9 @@ import { SocialIcon } from "@/components/SocialIcon";
 import { StackIcon } from "@/components/StackIcon";
 import Image from "next/image";
 import Link from "next/link";
+import { BlogCard } from "@/components/BlogCard";
+import { getHashnodeArticles } from "@/app/lib/getHashnodeArticles";
+import { BlogPost } from "./types/Blog";
 
 const stackIconsData = [
   {
@@ -110,22 +113,23 @@ const projectsData = [
   },
 ];
 
+export default async function Home() {
+  const posts = await getHashnodeArticles();
 
-export default function Home() {
   return (
     <>
       {" "}
-      <article className="flex flex-col border-b-2 border-light gap-y-4 pb-6">
-        <h1 className="text-4xl lg:text-5xl mb-0">
+      <article className="flex flex-col gap-y-4 pb-6 border-b-2 border-light">
+        <h1 className="mb-0 text-4xl lg:text-5xl">
           Hey! I&apos;m Daniel, a proud generalist who loves code, design and
           cats.
         </h1>
-        <p className="text-lg font-semibold mb-0">
+        <p className="mb-0 font-semibold text-lg">
           Check out my work below, and get in touch if you&apos;d like to work
           together. 👇
         </p>
 
-        <div className="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12 gap-y-3">
+        <div className="gap-y-3 grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12">
           {stackIconsData.map((stackIcon, index) => {
             return (
               <StackIcon
@@ -138,12 +142,12 @@ export default function Home() {
           })}
         </div>
       </article>
-      <article className="w-full flex-col gap-y-4 py-4">
+      <article className="flex-col gap-y-4 py-4 w-full">
         <div className="flex items-center mb-3">
           <h4>Projects</h4>
         </div>
 
-        <article className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
+        <article className="gap-6 grid grid-cols-1 lg:grid-cols-2 w-full">
           {projectsData.map((project, index) => {
             return (
               <ProjectCard
@@ -161,7 +165,20 @@ export default function Home() {
           })}
         </article>
       </article>
-      <article className="w-full flex-col gap-y-4 py-4">
+      <article className="flex-col gap-y-4 py-4 w-full">
+        <div className="flex items-center mb-3">
+          <h4>Blog Posts</h4>
+        </div>
+
+        <article className="gap-4 grid grid-cols-1 w-full">
+          {posts.map((post: BlogPost) => (
+            <div className="relative" key={post.slug}>
+              <BlogCard post={post} />
+            </div>
+          ))}
+        </article>
+      </article>
+      <article className="flex-col gap-y-4 py-4 w-full">
         <div className="flex items-center mb-3">
           <h4>Contact</h4>
         </div>

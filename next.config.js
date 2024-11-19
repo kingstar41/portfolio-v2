@@ -12,6 +12,11 @@ const nextConfig = {
         hostname: "cdn.simpleicons.org",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.hashnode.com",
+        port: "",
+      },
     ],
   },
 };
