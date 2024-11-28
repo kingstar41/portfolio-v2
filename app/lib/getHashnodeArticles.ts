@@ -4,7 +4,7 @@ export async function getHashnodeArticles() {
   const query = `
     query Publication {
       publication(host: "danielcranney.hashnode.dev") {
-        posts(first: 6) {
+        posts(first: 12) {
           edges {
             node {
               title
@@ -31,14 +31,14 @@ export async function getHashnodeArticles() {
     });
 
     const json = await response.json();
-    
+
     if (json.errors) {
-      console.error('Hashnode API Error:', json.errors);
+      console.error("Hashnode API Error:", json.errors);
       return [];
     }
 
     if (!json.data?.publication?.posts?.edges) {
-      console.error('Unexpected API response structure:', json);
+      console.error("Unexpected API response structure:", json);
       return [];
     }
 
@@ -48,10 +48,10 @@ export async function getHashnodeArticles() {
       brief: edge.node.brief,
       slug: edge.node.slug,
       dateAdded: edge.node.publishedAt,
-      coverImage: edge.node.coverImage?.url || ''
+      coverImage: edge.node.coverImage?.url || "",
     })) as BlogPost[];
   } catch (error) {
-    console.error('Error fetching Hashnode articles:', error);
+    console.error("Error fetching Hashnode articles:", error);
     return [];
   }
 }

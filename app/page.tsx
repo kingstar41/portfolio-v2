@@ -1,8 +1,5 @@
 import { ProjectCard } from "@/components/ProjectCard";
-import { SocialIcon } from "@/components/SocialIcon";
 import { StackIcon } from "@/components/StackIcon";
-import Image from "next/image";
-import Link from "next/link";
 import { BlogCard } from "@/components/BlogCard";
 import { getHashnodeArticles } from "@/app/lib/getHashnodeArticles";
 import { BlogPost } from "./types/Blog";
@@ -92,7 +89,7 @@ const projectsData = [
     arrowIconColor: "group-hover:text-[#139ae1]",
   },
   {
-    href: "http://www.svghub.app",
+    href: "http://www.svghub.vercel.app",
     imageWidth: 1366,
     imageHeight: 655,
     imageSrc: "/svghub.png",
@@ -114,7 +111,8 @@ const projectsData = [
 ];
 
 export default async function Home() {
-  const posts = await getHashnodeArticles();
+  const allPosts = await getHashnodeArticles();
+  const recentPosts = allPosts.slice(0, 5);
 
   return (
     <>
@@ -171,7 +169,7 @@ export default async function Home() {
         </div>
 
         <article className="gap-4 grid grid-cols-1 w-full">
-          {posts.map((post: BlogPost) => (
+          {recentPosts.map((post: BlogPost) => (
             <div className="relative" key={post.slug}>
               <BlogCard post={post} />
             </div>
