@@ -89,7 +89,7 @@ const projectsData = [
     arrowIconColor: "group-hover:text-[#139ae1]",
   },
   {
-    href: "http://www.svghub.vercel.app",
+    href: "http://svghub.vercel.app",
     imageWidth: 1366,
     imageHeight: 655,
     imageSrc: "/svghub.png",
@@ -99,13 +99,13 @@ const projectsData = [
     arrowIconColor: "group-hover:text-[#00B25A]",
   },
   {
-    href: "http://www.smylo.co",
+    href: "http://www.myfolio.co",
     imageWidth: 1366,
     imageHeight: 655,
     imageSrc: "/smylo.png",
-    title: "Smylo",
-    description: "Never miss an important date again",
-    backgroundStyle: "bg-[#f5bb00]",
+    title: "MyFolio",
+    description: "A portfolio, resume and GitHub builder for devs",
+    backgroundStyle: "bg-[#4e00f5]",
     arrowIconColor: "group-hover:text-[#f5bb00]",
   },
 ];
