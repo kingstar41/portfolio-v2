@@ -99,7 +99,7 @@ const projectsData = [
     arrowIconColor: "group-hover:text-[#00B25A]",
   },
   {
-    href: "http://www.myfolio.co",
+    href: "http://www.myfolio.dev",
     imageWidth: 1366,
     imageHeight: 655,
     imageSrc: "/smylo.png",
