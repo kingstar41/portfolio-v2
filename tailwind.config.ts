@@ -14,11 +14,11 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        accent: "#0968c6",
-        darkest: "#303440",
-        dark: "#4A536D",
-        mid: "#7A87AB",
-        light: "#D4D4D8",
+        accent: "#55A0FF",
+        darkest: "#1A1D25",
+        dark: "#404756",
+        mid: "#75819C",
+        light: "#D6DCEB",
         lightest: "#FFFFFF",
       },
       fontFamily: {

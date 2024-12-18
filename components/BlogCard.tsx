@@ -7,45 +7,40 @@ export function BlogCard({ post }: { post: BlogPost }) {
     <Link
       href={`https://danielcranney.hashnode.dev/${post.slug}`}
       target="_blank"
-      className="flex flex-col gap-4 gap-y-px opacity-100 hover:opacity-90 transition-all group"
+      className="relative flex flex-col border-dark/10 hover:border-accent hover:bg-dark/10 p-4 border-l-4 rounded-r-lg transition-all group"
     >
-      {/* {post.coverImage && (
-        <Image
-          src={post.coverImage}
-          alt={post.title}
-          width={600}
-          height={300}
-          className="shadow-lg rounded-2xl object-cover"
-        />
-      )} */}
-      <div className="flex justify-between pb-2 border-b border-light w-full">
-        <h3 className="group-hover:text-dark font-sans font-semibold text-lg transition-colors">
+      <div className="flex justify-between items-center w-full">
+        <p className="group-hover:text-lightest mb-0 font-semibold text-lg text-light transition-colors">
           {post.title}
-        </h3>
-        {/* <p className="mt-2 text-gray-600">{post.brief}</p> */}
-        {/* <time className="mt-2 text-mid text-sm">
-          {new Date(post.dateAdded).toLocaleDateString()}
-        </time> */}
+        </p>
 
-        <div
-          className={`project-link-icon-wrapper absolute right-4 bottom-4 opacity-0 group-hover:opacity-100 transition-opacity -rotate-45`}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="icon-tabler-arrow-down-right w-5 h-5 text-mid icon icon-tabler icons-tabler-outline"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M7 7l10 10" />
-            <path d="M17 8l0 9l-9 0" />
-          </svg>
+        <div className="flex items-center gap-4">
+          <time className="text-mid text-sm">
+            {new Date(post.dateAdded)
+              .toLocaleDateString("en-US", {
+                month: "short",
+                day: "numeric",
+                year: "numeric",
+              })
+              .replace(",", "")}
+          </time>
+
+          <div className="opacity-0 group-hover:opacity-100 transform transition-all translate-x-4 group-hover:translate-x-0 duration-200">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="text-gray-400 dark:text-gray-500"
+            >
+              <path d="M7 7l10 10M17 7v10H7" />
+            </svg>
+          </div>
         </div>
       </div>
     </Link>

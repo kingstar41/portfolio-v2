@@ -36,7 +36,7 @@ Table Of Contents:
   h4,
   h5,
   h6 {
-    @apply font-display text-darkest font-black mb-2
+    @apply font-display text-lightest font-black mb-2
     transition-all duration-150 tracking-tight;
   }
   h1 {
@@ -55,26 +55,26 @@ Table Of Contents:
     @apply text-base md:text-2xl;
   }
   h6 {
-    @apply text-sm font-bold md:text-lg;
+    @apply font-bold text-sm md:text-lg;
   }
   p {
-    @apply font-body font-semibold text-dark;
+    @apply font-body font-semibold text-light;
   }
   a {
-    @apply text-accent hover:text-darkest font-bold;
+    @apply font-bold text-accent hover:text-lightest;
   }
 }
 
 @layer components {
   .social-icon-wrapper {
-    @apply w-10 h-10 flex rounded-full items-center justify-center overflow-hidden bg-white p-3 transition-all duration-150 ease-in-out shadow-sm hover:shadow-lg hover:-translate-y-0.5;
+    @apply flex justify-center items-center bg-dark/30 shadow-sm hover:shadow-lg p-3 rounded-full w-10 h-10 transition-all hover:-translate-y-0.5 duration-150 overflow-hidden ease-in-out;
   }
 
   .tech-stack-wrapper {
-    @apply w-14 h-14 flex rounded-full items-center justify-center overflow-hidden bg-white p-3.5 transition-all duration-150 ease-in-out shadow-sm hover:shadow-lg hover:-translate-y-0.5;
+    @apply flex justify-center items-center bg-dark/30 shadow-sm hover:shadow-lg p-3.5 rounded-full w-14 h-14 transition-all hover:-translate-y-0.5 duration-150 overflow-hidden ease-in-out;
   }
 
   .project-link-icon-wrapper {
-    @apply w-8 h-8 flex rounded-full items-center justify-center overflow-hidden bg-transparent group-hover:bg-white transition-all duration-150 ease-in-out group-hover:shadow-lg text-white;
+    @apply group-hover:bg-white flex justify-center items-center bg-transparent group-hover:shadow-lg rounded-full w-8 h-8 text-white transition-all duration-150 overflow-hidden ease-in-out;
   }
 }
