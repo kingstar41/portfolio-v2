@@ -29,6 +29,13 @@ export const projectsData = [
     accentColor: "#F59E0B",
   },
   {
+    href: "https://thegradienthub.vercel.app/",
+    logoSrc: "/logos/gradienthub-logo.svg",
+    title: "GradientHub",
+    description: "Generate a random gradient and download as CSS, JPEG or PNG",
+    accentColor: "#121212",
+  },
+  {
     href: "http://www.wearespotlight.co.uk",
     logoSrc: "/logos/spotlight-logo.svg",
     title: "Spotlight Media",
