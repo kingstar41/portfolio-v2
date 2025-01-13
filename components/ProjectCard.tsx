@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import { ArrowUpRight, Github } from "lucide-react";
+import Link from "next/link";
 
 interface ProjectCardProps {
   href: string;
@@ -8,6 +10,7 @@ interface ProjectCardProps {
   title: string;
   description: string;
   accentColor: string;
+  index: number;
 }
 
 export const ProjectCard = ({
@@ -17,9 +20,14 @@ export const ProjectCard = ({
   title,
   description,
   accentColor,
+  index,
 }: ProjectCardProps) => {
   return (
-    <div className="flex items-center gap-6 p-4 border border-light/10 hover:border-light/20 rounded-lg transition-all group">
+    <div
+      className={`flex items-center gap-6 p-4 border border-light/10 hover:border-light/20 rounded-lg transition-all group cursor-pointer hover:bg-lightest/[2%]
+    ${index === 0 ? "col-span-2" : "col-span-1"}`}
+      onClick={() => window.open(href, "_blank")}
+    >
       <div className="flex-shrink-0">
         <Image
           src={logoSrc}
@@ -39,25 +47,23 @@ export const ProjectCard = ({
       {/* Actions */}
       <div className="flex items-center gap-2">
         {githubUrl && (
-          <a
-            href={githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+          <div
+            onClick={(e) => {
+              e.stopPropagation();
+              window.open(githubUrl, "_blank");
+            }}
             className="hover:bg-light/10 p-2 rounded-md transition-colors"
             style={{ color: accentColor }}
           >
             <Github size={20} />
-          </a>
+          </div>
         )}
-        <a
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:bg-dark/20 p-2 rounded-md transition-colors"
+        <div
+          className="group-hover:bg-dark/20 p-2 rounded-md transition-colors"
           style={{ color: accentColor }}
         >
           <ArrowUpRight size={20} />
-        </a>
+        </div>
       </div>
     </div>
   );

@@ -51,6 +51,7 @@ export default async function Home() {
                 title={project.title}
                 description={project.description}
                 accentColor={project.accentColor}
+                index={index}
               />
             );
           })}

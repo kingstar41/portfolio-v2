@@ -1,5 +1,12 @@
 export const projectsData = [
   {
+    href: "http://www.supabooking.com",
+    logoSrc: "/logos/supabooking-logo.svg",
+    title: "Supabooking",
+    description: "White label booking system",
+    accentColor: "#205ce1",
+  },
+  {
     href: "http://www.colorhub.app",
     logoSrc: "/logos/colorhub-logo.svg",
     title: "ColorHub",
@@ -33,7 +40,7 @@ export const projectsData = [
     logoSrc: "/logos/gradienthub-logo.svg",
     title: "GradientHub",
     description: "Generate a random gradient and download as CSS, JPEG or PNG",
-    accentColor: "#121212",
+    accentColor: "#F0F0F0",
   },
   {
     href: "http://www.wearespotlight.co.uk",

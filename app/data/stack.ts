@@ -44,19 +44,19 @@ export const stackIconsData = [
     href: "http://www.adobe.com",
     hex: "31A8FF",
   },
-  {
-    iconSlug: "adobeillustrator",
-    href: "http://www.adobe.com",
-    hex: "FF9A00",
-  },
-  {
-    iconSlug: "adobepremierepro",
-    href: "http://www.adobe.com",
-    hex: "9999FF",
-  },
-  {
-    iconSlug: "adobeaftereffects",
-    href: "http://www.adobe.com",
-    hex: "9999FF",
-  },
+  // {
+  //   iconSlug: "adobeillustrator",
+  //   href: "http://www.adobe.com",
+  //   hex: "FF9A00",
+  // },
+  // {
+  //   iconSlug: "adobepremierepro",
+  //   href: "http://www.adobe.com",
+  //   hex: "9999FF",
+  // },
+  // {
+  //   iconSlug: "adobeaftereffects",
+  //   href: "http://www.adobe.com",
+  //   hex: "9999FF",
+  // },
 ];
