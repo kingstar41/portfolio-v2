@@ -7,6 +7,13 @@ export const projectsData = [
     accentColor: "#205ce1",
   },
   {
+    href: "http://www.indiebuilds.co",
+    logoSrc: "/logos/indiebuilds-logo.svg",
+    title: "IndieBuilds",
+    description: "Find and support tools built by indie hackers",
+    accentColor: "#6567CE",
+  },
+  {
     href: "http://www.colorhub.app",
     logoSrc: "/logos/colorhub-logo.svg",
     title: "ColorHub",
