@@ -1,6 +1,9 @@
 ---
-title: "How to learn more effectively"
-date: "2020-01-01"
+title: "A Simple Tip to Help you Learn to Code More Effectively"
+date: "2021-08-06"
+canonical_url: "https://blog.danielcranney.com/a-simple-tip-to-help-you-learn-to-code-more-effectively"
+category: "Learning"
+tags: ["Education", "Productivity"]
 ---
 
 Learning to code is hard. Okay, let's not sugarcoat it... it's really, _really_ hard.
@@ -17,7 +20,7 @@ Of course you _can_ start building projects with a few months of coding experien
 
 Back in the 1960's, educational psychologist Benjamin Bloom (and a committee of educators) put together a model on the Mastery of Learning that we now know as _Bloom's Taxonomy of Learning_. The model, used by educators worldwide, suggests students pass through six levels of understanding on their way to mastering a subject or skill, starting with simply remembering facts, and ending by creating original work using what they have learned along the way.
 
-![Bloom's of Taxonomy of Learning](https://i.imgur.com/gZerQo9.jpg)
+![Bloom's of Taxonomy of Learning](https://i.imgur.com/gZerQo9.jpg align="left")
 
 Formal courses, mentorships and bootcamps are usually structured in a way that helps students pass through the levels in Bloom's model in a logical order and at a manageable pace. Learning independently without a syllabus or a structure to follow can mean would-be developers find the process frustrating, and much slower than they had initially hoped.
 
@@ -123,4 +126,4 @@ Take some time to study coding. Read documentation, study other people's code on
 
 Hopefully you'll find this tip helps you to learn to code more effectively, and to know there's a **lot** more to learning to code than just building.
 
-**If you enjoyed this article and want to more content related to web development, design and learning then follow me on Twitter at [http://www.twitter.com/danielcranney](https://twitter.com/danielcranney). **
+\*\*If you enjoyed this article and want to more content related to web development, design and learning then follow me on Twitter at [http://www.twitter.com/danielcranney](https://twitter.com/danielcranney). \*\*

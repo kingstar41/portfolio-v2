@@ -4,6 +4,8 @@ import "./globals.css";
 import Image from "next/image";
 import { SocialIcon } from "@/components/SocialIcon";
 import { socialIconsData } from "@/app/data/socials";
+import MainProfilePicture from "@/components/MainProfilePicture";
+import Navigation from "@/app/components/Navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,17 +25,9 @@ export default function RootLayout({
       <body className="relative bg-darkest">
         <div className="-right-[28rem] -bottom-[28rem] fixed bg-accent/20 blur-[100px] rounded-full w-[48rem] h-[48rem]"></div>
         <div className="-top-[28rem] -left-[28rem] fixed bg-accent/20 blur-[100px] rounded-full w-[48rem] h-[48rem]"></div>
-        <main className="flex lg:flex-row flex-col justify-between items-center border-accent bg-darkest border-t-8 lg:border-t-0 w-full min-h-screen">
-          <section className="relative top-0 left-0 lg:fixed flex flex-col items-center gap-y-4 lg:py-16 pt-12 pb-8 w-full lg:w-[28rem] lg:h-screen">
-            <div className="bg-accent rounded-full w-40 h-40 overflow-hidden">
-              <Image
-                src="/pfp.png"
-                width={500}
-                height={500}
-                alt="Daniel Cranney Headshot"
-              />
-            </div>
-            <h3 className="mb-0 font-extrabold text-3xl">Daniel Cranney</h3>
+        <main className="flex lg:flex-row flex-col justify-between items-center bg-darkest border-accent border-t-8 lg:border-t-0 w-full min-h-screen">
+          <section className="top-0 left-0 lg:fixed relative flex flex-col items-center gap-y-4 lg:py-16 pt-12 pb-8 w-full lg:w-[28rem] lg:h-screen">
+            <MainProfilePicture />
 
             <div className="flex flex-col items-center gap-y-0.5">
               <p className="flex text-base">
@@ -53,6 +47,8 @@ export default function RootLayout({
               <p className="flex text-base">Freelance Developer & Designer</p>
             </div>
 
+            <Navigation />
+
             <article className="flex items-center gap-x-2 mt-4">
               {socialIconsData.map((socialIcon, index) => (
                 <SocialIcon
@@ -67,12 +63,12 @@ export default function RootLayout({
               ))}
             </article>
 
-            <p className="lg:flex hidden mt-auto text-base">
+            <p className="hidden lg:flex mt-auto text-base">
               &copy;{new Date().getFullYear()} Daniel Cranney
             </p>
           </section>
 
-          <section className="flex flex-col gap-y-6 lg:ml-[28rem] px-14 py-10 lg:p-16 w-full lg:w-3/4 min-h-screen">
+          <section className="flex flex-col gap-y-6 lg:ml-[28rem] lg:p-16 px-14 py-10 w-full lg:w-3/4 min-h-screen">
             {children}
 
             <p className="lg:hidden mt-auto text-base">

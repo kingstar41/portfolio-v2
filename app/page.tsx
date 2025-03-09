@@ -1,18 +1,26 @@
 import { ProjectCard } from "@/components/ProjectCard";
 import { StackIcon } from "@/components/StackIcon";
 import { BlogCard } from "@/components/BlogCard";
-import { getHashnodeArticles } from "@/app/lib/getHashnodeArticles";
-import { BlogPost } from "./types/Blog";
 import { stackIconsData } from "@/app/data/stack";
 import { projectsData } from "@/app/data/projects";
+import { getSortedPostsData } from "../lib/posts";
+import Link from "next/link";
 
-export default async function Home() {
-  const allPosts = await getHashnodeArticles();
-  const recentPosts = allPosts.slice(0, 5);
+type BlogPost = {
+  id: string;
+  date: string;
+  title: string;
+  category?: string;
+  image_url?: string;
+};
+
+export default function Home() {
+  // Get the latest 5 blog posts
+  const latestPosts = getSortedPostsData().slice(0, 5);
 
   return (
     <>
-      <article className="flex flex-col gap-y-6 border-dark/40 pb-6 border-b-2">
+      <article className="flex flex-col gap-y-6 pb-6 border-dark/40 border-b-2">
         <h1 className="mb-0 text-4xl lg:text-5xl">
           Hey! I&apos;m Daniel, a proud generalist who builds things with
           computers.
@@ -22,7 +30,7 @@ export default async function Home() {
           together. 👇
         </p>
 
-        <div className="gap-y-3 grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12">
+        <div className="flex flex-wrap gap-x-3 gap-y-1">
           {stackIconsData.map((stackIcon, index) => {
             return (
               <StackIcon
@@ -36,11 +44,11 @@ export default async function Home() {
         </div>
       </article>
       <article className="flex-col gap-y-4 py-4 w-full">
-        <div className="flex items-center mb-3">
+        <div className="flex items-center mb-3" id="projects">
           <h4>Projects</h4>
         </div>
 
-        <article className="gap-6 grid grid-cols-1 lg:grid-cols-2 w-full">
+        <article className="gap-6 grid grid-cols-1 lg:grid-cols-6 w-full">
           {projectsData.map((project, index) => {
             return (
               <ProjectCard
@@ -58,20 +66,26 @@ export default async function Home() {
         </article>
       </article>
       <article className="flex-col gap-y-4 py-4 w-full">
-        <div className="flex items-center mb-3">
-          <h4>Blog Posts</h4>
+        <div className="flex justify-between items-center mb-8">
+          <h4>Latest Blog Posts</h4>
+          <Link
+            href="/blog"
+            className="text-lightest/60 hover:text-lightest transition-colors"
+          >
+            View all posts →
+          </Link>
         </div>
 
-        <article className="gap-0 grid grid-cols-1 w-full">
-          {recentPosts.map((post: BlogPost) => (
-            <div className="relative" key={post.slug}>
-              <BlogCard post={post} />
+        <div className="gap-8 grid grid-cols-1 w-full">
+          {latestPosts.slice(0, 1).map((post: BlogPost) => (
+            <div className="relative" key={post.id}>
+              <BlogCard post={post} showImage={false} />
             </div>
           ))}
-        </article>
+        </div>
       </article>
       <article className="flex-col gap-y-4 py-4 w-full">
-        <div className="flex items-center mb-3">
+        <div className="flex items-center mb-3" id="contact">
           <h4>Contact</h4>
         </div>
 

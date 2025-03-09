@@ -24,8 +24,8 @@ export const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <div
-      className={`flex items-center gap-6 p-4 border border-light/10 hover:border-light/20 rounded-lg transition-all group cursor-pointer hover:bg-lightest/[2%]
-    ${index === 0 || index === 1 ? "col-span-2" : "col-span-1"}`}
+      className={`flex items-center gap-x-4 p-4 border border-light/10 hover:border-light/20 rounded-lg transition-all group cursor-pointer hover:bg-lightest/[2%]
+    ${index === 0 || index === 1 ? "col-span-3" : "col-span-2"}`}
       onClick={() => window.open(href, "_blank")}
     >
       <div className="flex-shrink-0">

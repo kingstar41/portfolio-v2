@@ -1,6 +1,8 @@
 import Date from "@/components/Date";
-
-import { getAllPostIds, getPostData } from "@/lib/posts";
+import Link from "next/link";
+import Giscus from "@giscus/react";
+import { getPostData } from "@/lib/posts";
+import CommentsSection from "@/components/CommentsSection";
 
 type Params = {
   id: string;
@@ -14,11 +16,13 @@ type PostData = {
   title: string;
   date: string;
   contentHtml: string;
+  category?: string;
+  image_url?: string;
+  tags?: string[];
 };
 
 export async function generateMetadata({ params }: Props) {
   const postData: PostData = await getPostData(params.id);
-
   return {
     title: postData.title,
   };
@@ -29,20 +33,73 @@ export default async function Post({ params }: Props) {
   const postData: PostData = await getPostData(params.id);
 
   return (
-    <>
-      {/* Post Title */}
-      <h1 className="font-extrabold text-3xl mb-1">{postData.title}</h1>
+    <article className="z-30 mx-auto max-w-3xl">
+      {/* Back to blog link */}
+      <Link
+        href="/blog"
+        className="inline-flex items-center mb-8 text-lightest/60 hover:text-lightest transition-colors"
+      >
+        ← Back to all posts
+      </Link>
 
-      <div className="text-gray-500 font-medium mb-5">
-        <Date dateString={postData.date} />
-      </div>
+      {/* Hero Image */}
+      {postData.image_url && (
+        <div className="relative mb-8 rounded-xl w-full h-[400px] overflow-hidden">
+          <img
+            src={postData.image_url}
+            alt={postData.title}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      )}
+
+      {/* Post Header */}
+      <header className="mb-4">
+        {/* Category */}
+        {postData.category && (
+          <Link
+            href={`/blog/category/${postData.category.toLowerCase()}`}
+            className="inline-block bg-dark/20 hover:bg-dark/30 mb-4 px-3 py-1.5 rounded-full font-medium text-lightest/60 text-sm transition-colors"
+          >
+            {postData.category}
+          </Link>
+        )}
+
+        {/* Title */}
+        <h1 className="mb-4 font-extrabold text-4xl lg:text-5xl">
+          {postData.title}
+        </h1>
+
+        {/* Date */}
+        <div className="text-lightest/60">
+          <Date dateString={postData.date} />
+        </div>
+      </header>
 
       {/* Post Content */}
       <div
-        className="text-gray-600"
+        className="flex flex-col gap-y-6 prose-invert max-w-none prose"
         dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
-      />
-    </>
+      ></div>
+
+      {/* Tags */}
+      {postData.tags && postData.tags.length > 0 && (
+        <div className="mt-12 pt-6 border-t border-lightest/10">
+          <div className="flex flex-wrap gap-2">
+            {postData.tags.map((tag) => (
+              <span
+                key={tag}
+                className="bg-dark/10 px-2 py-1 rounded text-lightest/60 text-sm"
+              >
+                #{tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <CommentsSection />
+    </article>
   );
 }
 

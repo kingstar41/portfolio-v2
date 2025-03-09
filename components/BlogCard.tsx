@@ -1,48 +1,54 @@
-import Image from "next/image";
 import Link from "next/link";
-import { BlogPost } from "@/app/types/Blog";
+import Date from "@/components/Date";
 
-export function BlogCard({ post }: { post: BlogPost }) {
+type BlogCardProps = {
+  post: {
+    id: string;
+    title: string;
+    date: string;
+    category?: string;
+    image_url?: string;
+  };
+  showImage?: boolean;
+};
+
+export function BlogCard({ post, showImage = true }: BlogCardProps) {
   return (
-    <Link
-      href={`https://danielcranney.hashnode.dev/${post.slug}`}
-      target="_blank"
-      className="relative flex flex-col border-dark/10 hover:border-accent hover:bg-dark/10 p-4 border-l-4 rounded-r-lg transition-all group"
-    >
-      <div className="flex justify-between items-center w-full">
-        <p className="group-hover:text-lightest mb-0 font-semibold text-lg text-light transition-colors">
-          {post.title}
-        </p>
+    <div className="group relative bg-dark/10 hover:bg-dark/20 border border-lightest/10 rounded-lg overflow-hidden hover:text-white transition-all duration-150 ease-in-out cursor-pointer">
+      <div className="-right-24 -bottom-24 absolute bg-accent opacity-20 blur-3xl rounded-full w-60 h-40" />
 
-        <div className="flex items-center gap-4">
-          <time className="text-mid text-sm">
-            {new Date(post.dateAdded)
-              .toLocaleDateString("en-US", {
-                month: "short",
-                day: "numeric",
-                year: "numeric",
-              })
-              .replace(",", "")}
-          </time>
-
-          <div className="opacity-0 group-hover:opacity-100 transform transition-all translate-x-4 group-hover:translate-x-0 duration-200">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-gray-400 dark:text-gray-500"
-            >
-              <path d="M7 7l10 10M17 7v10H7" />
-            </svg>
+      {showImage && post.image_url && (
+        <div className="w-full">
+          <div className="relative pt-[56.25%] w-full">
+            <img
+              src={post.image_url}
+              alt={post.title}
+              className="top-0 left-0 absolute w-full h-full object-cover"
+            />
           </div>
         </div>
+      )}
+
+      <div className="px-6 py-6">
+        {post.category && (
+          <div className="mb-3">
+            <span className="bg-dark/20 px-1.5 py-0.5 rounded-full font-medium text-lightest/60 text-xs uppercase tracking-wider transition-colors">
+              {post.category}
+            </span>
+          </div>
+        )}
+
+        <Link
+          href={`/posts/${post.id}`}
+          className="block mb-3 font-bold text-xl transition-colors"
+        >
+          {post.title}
+        </Link>
+
+        <div className="text-lightest/60 text-sm transition-colors">
+          <Date dateString={post.date} />
+        </div>
       </div>
-    </Link>
+    </div>
   );
 }
