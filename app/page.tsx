@@ -76,12 +76,20 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="gap-8 grid grid-cols-1 w-full">
-          {latestPosts.slice(0, 1).map((post: BlogPost) => (
-            <div className="relative" key={post.id}>
-              <BlogCard post={post} showImage={false} />
-            </div>
-          ))}
+        <div className="z-50 relative w-full">
+          <div className="relative gap-8 grid grid-cols-1 w-full mask-fade">
+            {latestPosts.slice(0, 2).map((post: BlogPost, index) => (
+              <BlogCard post={post} showImage={false} index={index} />
+            ))}
+          </div>
+          <div className="bottom-20 left-1/2 z-40 absolute -translate-x-1/2">
+            <Link
+              href="/blog"
+              className="bg-dark/10 hover:bg-dark/20 px-4 py-2 border hover:border-accent/40 border-lightest/10 rounded-md text-lightest/80 hover:text-lightest transition-colors"
+            >
+              Read all posts →
+            </Link>
+          </div>
         </div>
       </article>
       <article className="flex-col gap-y-4 py-4 w-full">

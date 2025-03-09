@@ -30,7 +30,7 @@ export default function Blog() {
   return (
     <article className="flex-col gap-y-4 pb-4 w-full">
       <div className="flex items-center mb-8">
-        <h1 className="font-bold text-5xl">Blog Posts</h1>
+        <h1>Blog Posts</h1>
       </div>
 
       {/* Categories summary */}
@@ -46,14 +46,15 @@ export default function Blog() {
         ))}
       </div>
 
-      <div className="gap-8 grid grid-cols-2 w-full">
+      <div className="gap-8 grid grid-cols-1 md:grid-cols-2 w-full">
         {allPostsData.map(({ id, date, title, category, image_url }) => (
-          <div
+          <Link
             key={id}
-            className="group relative bg-dark/10 hover:bg-dark/20 border border-lightest/10 rounded-lg overflow-hidden transition-all duration-150 ease-in-out cursor-pointer"
+            href={`/posts/${id}`}
+            className="group relative bg-dark/10 hover:bg-dark/20 border hover:border-accent/40 border-lightest/10 rounded-lg overflow-hidden transition-all duration-150 ease-in-out cursor-pointer"
           >
             {/* Background blur effect */}
-            <div className="-right-24 -bottom-24 absolute bg-accent opacity-20 blur-3xl rounded-full w-60 h-40" />
+            <div className="group-hover:bg-accent group-hover:w-60 group-hover:h-60 -right-24 -bottom-24 absolute bg-accent opacity-20 group-hover:opacity-20 blur-3xl rounded-full w-60 h-60 transition-all duration-150 ease-in-out" />
 
             {/* Article image */}
             {image_url && (
@@ -82,19 +83,16 @@ export default function Blog() {
               )}
 
               {/* Main content */}
-              <Link
-                href={`/posts/${id}`}
-                className="block mb-3 font-bold text-xl transition-colors"
-              >
+              <p className="group-hover:text-white block mb-3 font-bold text-accent text-lg md:text-xl lg:text-xl transition-colors">
                 {title}
-              </Link>
+              </p>
 
               {/* Date */}
               <div className="text-lightest/60 text-sm">
                 <Date dateString={date} />
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </article>

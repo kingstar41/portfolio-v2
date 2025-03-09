@@ -68,7 +68,7 @@ export default function RootLayout({
             </p>
           </section>
 
-          <section className="flex flex-col gap-y-6 lg:ml-[28rem] lg:p-16 px-14 py-10 w-full lg:w-3/4 min-h-screen">
+          <section className="flex flex-col gap-y-6 lg:ml-[28rem] px-8 lg:px-16 py-8 lg:py-16 w-full lg:w-3/4 min-h-screen">
             {children}
 
             <p className="lg:hidden mt-auto text-base">
