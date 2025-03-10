@@ -79,7 +79,12 @@ export default function Home() {
         <div className="z-50 relative w-full">
           <div className="relative gap-8 grid grid-cols-1 w-full mask-fade">
             {latestPosts.slice(0, 2).map((post: BlogPost, index) => (
-              <BlogCard post={post} showImage={false} index={index} />
+              <BlogCard
+                post={post}
+                showImage={false}
+                index={index}
+                key={post.id}
+              />
             ))}
           </div>
           <div className="bottom-20 left-1/2 z-40 absolute -translate-x-1/2">
