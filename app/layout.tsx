@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "highlight.js/styles/atom-one-dark.css";
 import Image from "next/image";
 import { SocialIcon } from "@/components/SocialIcon";
 import { socialIconsData } from "@/app/data/socials";
