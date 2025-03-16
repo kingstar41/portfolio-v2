@@ -22,7 +22,7 @@ export default function CategoryPage({ params }: Props) {
       <div className="flex flex-col items-start gap-y-4 mb-8">
         <Link
           href="/blog"
-          className="mr-4 text-lightest/60 hover:text-lightest"
+          className="mr-4 text-lightest/60 hover:text-lightest no-underline hover:no-underline transition-colors"
         >
           ← Back to all posts
         </Link>

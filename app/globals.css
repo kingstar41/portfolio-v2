@@ -15,6 +15,11 @@ Table Of Contents:
   mask-image: linear-gradient(to bottom, black 30%, transparent 90%);
 }
 
+.mask-fade-large {
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 90%);
+  mask-image: linear-gradient(to bottom, black 60%, transparent 90%);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -27,7 +32,10 @@ Table Of Contents:
 
 @layer base {
   * {
-    @apply antialiased scroll-smooth;
+    @apply antialiased appearance-none scroll-smooth;
+  }
+  body {
+    @apply bg-neutral-900 m-0 p-0;
   }
 }
 
@@ -76,6 +84,36 @@ Table Of Contents:
   }
 }
 
+/**********************/
+/*      Buttons      */
+/**********************/
+@layer components {
+  .btn {
+    @apply font-display font-bold px-4 py-2 rounded-md
+    transition-all duration-150;
+  }
+
+  .btn-grid-item {
+    @apply border border-neutral-800 text-white
+    hover:bg-neutral-800 hover:border-neutral-700;
+  }
+
+  .btn-primary {
+    @apply bg-accent text-white
+    hover:bg-accent/90;
+  }
+
+  .btn-outline {
+    @apply border border-accent text-accent
+    hover:bg-accent hover:text-white;
+  }
+
+  .btn-ghost {
+    @apply text-white bg-white/10
+    hover:bg-white/20;
+  }
+}
+
 @layer components {
   .social-icon-wrapper {
     @apply flex justify-center items-center bg-dark/30 shadow-sm hover:shadow-lg p-3 rounded-full w-10 h-10 transition-all hover:-translate-y-0.5 duration-150 overflow-hidden ease-in-out;
@@ -114,6 +152,11 @@ pre {
   padding: 0rem !important;
   overflow-x: auto !important;
   margin: 1.5rem 0 !important;
+  position: relative !important;
+}
+
+.copy-button {
+  @apply z-10;
 }
 
 /* Ensure code text is visible */

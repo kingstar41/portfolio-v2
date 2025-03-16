@@ -5,6 +5,8 @@ import { getPostData } from "@/lib/posts";
 import CommentsSection from "@/components/CommentsSection";
 import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { FaB, FaBluesky } from "react-icons/fa6";
+import CodeBlockCopy from "@/components/CodeBlockCopy";
+import Script from "next/script";
 
 type Params = {
   id: string;
@@ -34,14 +36,22 @@ export async function generateMetadata({ params }: Props) {
 export default async function Post({ params }: Props) {
   const postData: PostData = await getPostData(params.id);
 
+  // Add copy button HTML to each code block
+  const contentWithCopyButton = postData.contentHtml.replace(
+    /<pre><code/g,
+    `<pre><div class="top-4 right-4 z-20 absolute bg-dark/20 opacity-60 hover:opacity-100 px-2 copy-button py-1 rounded font-bold text-lightest/60 text-sm uppercase transition-opacity cursor-pointer" onclick="navigator.clipboard.writeText(this.parentElement.querySelector('code').textContent).then(() => {this.textContent='Copied!';setTimeout(() => {this.textContent='Copy'}, 2000)})">Copy</div><code`
+  );
+
   return (
     <article className="z-30 mx-auto max-w-3xl" id="blog">
       {/* Back to blog link */}
       <Link
         href="/blog"
-        className="inline-flex items-center mb-8 text-lightest/60 hover:text-lightest transition-colors"
+        className="inline-flex items-center mb-8 text-lightest/60 hover:text-lightest no-underline hover:no-underline transition-colors"
       >
-        ← Back to all posts
+        <span className="no-underline hover:no-underline">
+          ← Back to all posts
+        </span>
       </Link>
 
       {/* Hero Image */}
@@ -81,8 +91,8 @@ export default async function Post({ params }: Props) {
       {/* Post Content */}
       <div
         className="flex flex-col gap-y-6 prose-invert max-w-none prose"
-        dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
-      ></div>
+        dangerouslySetInnerHTML={{ __html: contentWithCopyButton }}
+      />
 
       {/* Tags and Social Section */}
       <div className="mt-12 pt-6 border-t border-lightest/10">

@@ -6,7 +6,7 @@ import Image from "next/image";
 import { SocialIcon } from "@/components/SocialIcon";
 import { socialIconsData } from "@/app/data/socials";
 import MainProfilePicture from "@/components/MainProfilePicture";
-import Navigation from "@/app/components/Navigation";
+import Navigation from "@/components/Navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
