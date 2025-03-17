@@ -24,7 +24,9 @@ export default function CategoryPage({ params }: Props) {
           href="/blog"
           className="mr-4 text-lightest/60 hover:text-lightest no-underline hover:no-underline transition-colors"
         >
-          ← Back to all posts
+          <span className="no-underline hover:no-underline">
+            ← Back to all posts
+          </span>
         </Link>
         <h1 className="font-bold text-5xl capitalize">{category}</h1>
       </div>
@@ -54,7 +56,7 @@ export default function CategoryPage({ params }: Props) {
             {/* Content wrapper */}
             <div className="px-6 py-6">
               <Link
-                href={`/posts/${id}`}
+                href={`/blog/posts/${id}`}
                 className="block mb-3 font-bold text-xl transition-colors"
               >
                 {title}

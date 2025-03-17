@@ -50,7 +50,7 @@ Table Of Contents:
   h5,
   h6 {
     @apply font-display text-lightest font-black mb-2
-    transition-all duration-150 tracking-tight;
+    transition-all duration-150 tracking-tight leading-relaxed;
   }
   h1 {
     @apply text-3xl md:text-5xl;
@@ -71,7 +71,7 @@ Table Of Contents:
     @apply font-bold text-xs md:text-base;
   }
   p {
-    @apply font-body font-semibold text-light text-lg;
+    @apply font-body font-semibold text-light text-base leading-relaxed tracking-normal;
   }
   a {
     @apply font-bold text-accent hover:text-lightest;
@@ -80,7 +80,7 @@ Table Of Contents:
     @apply border-lightest/20 mix-blend-overlay;
   }
   li {
-    @apply font-bold text-lightest;
+    @apply pl-0 font-semibold text-light text-base;
   }
 }
 
@@ -133,7 +133,7 @@ Table Of Contents:
   }
 
   .nav-link {
-    @apply font-medium text-lightest/50 hover:text-lightest text-sm 
+    @apply font-semibold text-lightest/50 hover:text-lightest text-sm 
     transition-colors duration-150 relative;
   }
 
@@ -151,7 +151,7 @@ Table Of Contents:
 pre {
   padding: 0rem !important;
   overflow-x: auto !important;
-  margin: 1.5rem 0 !important;
+  margin: 0.5rem 0 !important;
   position: relative !important;
 }
 
@@ -224,10 +224,14 @@ code {
 
 /* Style inline code differently */
 :not(pre) > code {
-  background-color: #2d2d2d !important;
+  background-color: rgba(64, 71, 86, 0.5) !important;
   padding: 0.2em 0.4em !important;
   border-radius: 0.25rem !important;
   font-size: 0.875em !important;
+}
+
+blockquote {
+  @apply py-2 pl-4 border-accent border-l-2 bg-dark/10;
 }
 
 /* Optional: Add a nice scrollbar for code blocks */
@@ -272,11 +276,11 @@ pre::-webkit-scrollbar-thumb {
 }
 
 #blog ul li {
-  @apply font-medium text-lg list-disc list-inside;
+  @apply pl-0 font-semibold text-base leading-relaxed list-disc list-inside;
 }
 
 #blog a {
-  @apply text-accent hover:text-white underline transition-all duration-150 ease-in-out;
+  @apply text-accent hover:text-white transition-all duration-150 ease-in-out;
 }
 
 pre.code-block {

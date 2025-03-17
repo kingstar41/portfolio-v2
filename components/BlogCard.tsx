@@ -16,7 +16,7 @@ type BlogCardProps = {
 export function BlogCard({ post, showImage = true, index }: BlogCardProps) {
   return (
     <Link
-      href={`/posts/${post.id}`}
+      href={`/blog/posts/${post.id}`}
       className={`group z-10 relative bg-dark/20 hover:bg-dark/30 border hover:border-accent/40 border-lightest/10 rounded-lg overflow-hidden hover:text-white transition-all duration-150 ease-in-out cursor-pointer
         ${index === 0 ? "" : "blur-sm pointer-events-none"}
         `}

@@ -49,7 +49,7 @@ export default async function Post({ params }: Props) {
         href="/blog"
         className="inline-flex items-center mb-8 text-lightest/60 hover:text-lightest no-underline hover:no-underline transition-colors"
       >
-        <span className="no-underline hover:no-underline">
+        <span className="text-lightest/50 hover:text-lightest/75 text-sm no-underline hover:no-underline">
           ← Back to all posts
         </span>
       </Link>
@@ -73,7 +73,9 @@ export default async function Post({ params }: Props) {
             href={`/blog/category/${postData.category.toLowerCase()}`}
             className="inline-block bg-dark/20 hover:bg-dark/30 mb-4 px-3 py-1.5 rounded-full font-medium text-lightest/60 text-sm transition-colors"
           >
-            {postData.category}
+            <span className="font-semibold text-lightest/60 text-xs uppercase tracking-wider">
+              {postData.category}
+            </span>
           </Link>
         )}
 

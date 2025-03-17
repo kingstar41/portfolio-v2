@@ -50,33 +50,18 @@ export default function Blog() {
         {allPostsData.map(({ id, date, title, category, image_url }) => (
           <Link
             key={id}
-            href={`/posts/${id}`}
+            href={`/blog/posts/${id}`}
             className="group relative bg-dark/10 hover:bg-dark/20 border hover:border-accent/40 border-lightest/10 rounded-lg overflow-hidden transition-all duration-150 ease-in-out cursor-pointer"
           >
             {/* Background blur effect */}
             <div className="group-hover:bg-accent group-hover:w-60 group-hover:h-60 -right-24 -bottom-24 absolute bg-accent opacity-20 group-hover:opacity-20 blur-3xl rounded-full w-60 h-60 transition-all duration-150 ease-in-out" />
-
-            {/* Article image */}
-            {image_url && (
-              <div className="w-full">
-                <div className="relative pt-[56.25%] w-full">
-                  {" "}
-                  {/* 16:9 aspect ratio */}
-                  <img
-                    src={image_url}
-                    alt={title}
-                    className="top-0 left-0 absolute w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            )}
 
             {/* Content wrapper - now below the image */}
             <div className="px-6 py-6">
               {/* Category */}
               {category && (
                 <div className="mb-3">
-                  <span className="bg-dark/20 px-1.5 py-0.5 rounded-full font-medium text-lightest/60 text-xs uppercase tracking-wider">
+                  <span className="bg-dark/20 px-1.5 py-0.5 rounded-full font-semibold text-lightest/60 text-xs uppercase tracking-wider">
                     {category}
                   </span>
                 </div>
