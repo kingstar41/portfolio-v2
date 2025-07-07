@@ -1,7 +1,6 @@
 ---
 title: "I Launched My First Product on Product Hunt. Here's What I Learned"
 date: "2021-11-21"
-canonical_url: "https://blog.danielcranney.com/i-launched-my-first-product-on-product-hunt-heres-what-i-learned"
 category: "Building"
 tags: ["Education", "Productivity"]
 ---
@@ -64,7 +63,6 @@ This gave me time to ‘promote’ it on Twitter, and let followers know when th
 
 During this 10 day period, I shared one of the pre-made colour palettes available on my product each day on Twitter, making sure I responded to everybody that took an interest in the project, and making a note of the feedback they gave.
 
-%[https://twitter.com/danielcranney/status/1458327051111370754]
 _One of the Tweets I shared in the run-up to the launch_
 
 This 10 day run-up was a great way to force myself to focus in on the finer details of the product. I quite simply didn't have time to add any new major features in this time (even though it was tempting), so instead I set about fixing the tiniest of bugs (with the help of some fantastic developers who were kind enough to point many of them out to me).
@@ -74,8 +72,6 @@ Those console.log's I left in by mistake? A quick fix. The typo in my code? A tw
 Wanting to make sure my users would have the best experience possible, I ran my website through Google Lighthouse (on Chrome) to improve loading times and accessibility.
 
 I also took some time to create an introductory video to (a) go on the Product Hunt launch page and (b) go on the landing page of the site itself. Check it out below to get an idea of what I produced.
-
-%[https://www.youtube.com/watch?v=KZrjhUj6AgQ]
 
 ## Feedback Helps You Build Your Roadmap
 
@@ -116,5 +112,3 @@ Don't make this mistake! Take the time install a tracker, and keep an eye on it 
 Launching my product on Product Hunt was one of the best experiences I've had since learning to code.
 
 I've made some amazing connections with some great people, my product has gotten better, my roadmap is clearer, my confidence is higher, and I'm excited to do it all over again with my next creation!
-
-**If you enjoyed this article and want to see more content about development, design, creativity and learning then follow me on Twitter at [@danielcranney](http://www.twitter.com/danielcranney).**

@@ -3,7 +3,7 @@ import { BlogPost } from "../types/Blog";
 export async function getHashnodeArticles() {
   const query = `
     query Publication {
-      publication(host: "danielcranney.hashnode.dev") {
+      publication(host: "kingstar9941.hashnode.dev") {
         posts(first: 12) {
           edges {
             node {

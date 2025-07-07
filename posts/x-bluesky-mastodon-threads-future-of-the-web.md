@@ -1,8 +1,6 @@
 ---
 title: "X, Bluesky, Mastodon and Threads: What do they tell us about the future of the web?"
 date: "2024-11-25"
-canonical_url: "https://blog.danielcranney.com/x-bluesky-mastodon-and-threads-what-do-they-tell-us-about-the-future-of-the-web"
-image_url: "https://cdn.hashnode.com/res/hashnode/image/upload/v1732556552254/45b3e4b0-2ce1-457c-a70b-a3dd9a43a27d.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
 category: "Society & Culture"
 tags: ["Education", "Productivity"]
 ---
@@ -126,14 +124,3 @@ Bluesky and Mastadon’s open-source, decentralised vision offers hope for a mor
 For users, these platforms serve as a reminder that social media platforms are not neutral, and they impact both the web, and the real world.
 
 The policies, algorithms, and business models they adopt reflect deeper values about what the web should be, and by examining them in this article, I hope you can make informed choices about the platforms you support.
-
----
-
-If you enjoyed this article and want to see more content about development, design, creativity and learning, then follow me on:
-
-- X: [http://www.x.com/danielcranney](http://www.x.com/danielcranney)
-- Bluesky: [https://bsky.app/profile/danielcranney.bsky.social](https://bsky.app/profile/danielcranney.bsky.social)
-- Threads: [https://www.threads.net/@daniel.cranney](https://www.threads.net/@daniel.cranney)
-- LinkedIn: [https://www.linkedin.com/in/daniel-cranney/](https://www.linkedin.com/in/daniel-cranney/)
-
-If you'd like to see my work, check out [**danielcranney.com**](https://danielcranney.com/).

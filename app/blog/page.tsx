@@ -6,7 +6,6 @@ type AllPostsData = {
   date: string;
   title: string;
   id: string;
-  canonical_url?: string;
   image_url?: string;
   category?: string;
   tags?: string[];

@@ -22,7 +22,7 @@ export default function Home() {
     <>
       <article className="flex flex-col gap-y-6 pb-6 border-dark/40 border-b-2">
         <h1 className="mb-0 text-4xl lg:text-5xl">
-          Hey! I&apos;m Daniel, a proud generalist who builds things with
+          Hey! I&apos;m Zef Lako, a proud generalist who builds things with
           computers.
         </h1>
         <p className="mb-0 font-semibold text-xl">
@@ -104,7 +104,7 @@ export default function Home() {
 
         <p>
           If you&apos;d like to collaborate on a project, I&apos;d love to hear
-          from you. <a href="mailto:hello@danielcranney.com">Email me</a> or get
+          from you. <a href="mailto:kingstar9941@proton.me">Email me</a> or get
           in touch on socials.
         </p>
       </article>

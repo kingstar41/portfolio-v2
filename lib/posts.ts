@@ -62,7 +62,6 @@ export function getSortedPostsData() {
       ...(matterResult.data as {
         date: string;
         title: string;
-        canonical_url?: string;
         category?: string;
         tags?: string[];
         image_url?: string;
@@ -138,7 +137,6 @@ export async function getPostData(id: string) {
     ...(matterResult.data as {
       date: string;
       title: string;
-      canonical_url?: string; // Optional canonical URL
       category?: string;
       tags?: string[];
       image_url?: string;

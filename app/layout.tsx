@@ -11,9 +11,9 @@ import Navigation from "@/components/Navigation";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Daniel Cranney | Developer Advocate and Web Developer",
+  title: "Zef Lako | Developer Advocate and Web Developer",
   description:
-    "I am a Developer Advocate, web developer and former teacher from the UK.",
+    "I am a Developer Advocate, web developer and former teacher from the Albania.",
 };
 
 export default function RootLayout({
@@ -32,20 +32,8 @@ export default function RootLayout({
 
             <div className="flex flex-col items-center gap-y-0.5">
               <p className="flex text-base">
-                Developer Advocate at&nbsp;
-                <a href="http://www.wearedevelopers.com" target="_blank">
-                  WeAreDevelopers
-                </a>
+                Semi-Senior Frontend Developer | 5+ years of experience
               </p>
-
-              <p className="flex text-base">
-                Co-Founder at&nbsp;
-                <a href="http://www.wearespotlight.co.uk" target="_blank">
-                  Spotlight Media
-                </a>
-              </p>
-
-              <p className="flex text-base">Freelance Developer & Designer</p>
             </div>
 
             <Navigation />
@@ -65,7 +53,7 @@ export default function RootLayout({
             </article>
 
             <p className="hidden lg:flex mt-auto text-base">
-              &copy;{new Date().getFullYear()} Daniel Cranney
+              &copy;{new Date().getFullYear()} Zef Lako
             </p>
           </section>
 
@@ -73,7 +61,7 @@ export default function RootLayout({
             {children}
 
             <p className="lg:hidden mt-auto text-base">
-              &copy;{new Date().getFullYear()} Daniel Cranney
+              &copy;{new Date().getFullYear()} Zef Lako
             </p>
           </section>
         </main>

@@ -1,8 +1,6 @@
 ---
 title: "Why Technical Language is Annoying but Necessary"
 date: "2024-11-21"
-canonical_url: "https://blog.danielcranney.com/i-launched-my-first-product-on-product-hunt-heres-what-i-learned"
-image_url: "https://cdn.hashnode.com/res/hashnode/image/upload/v1732210761202/c87d6aa1-a83b-4910-9912-d9aacb6926a3.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
 category: "Learning"
 tags: ["Education", "Productivity"]
 ---
@@ -100,14 +98,3 @@ We need to meet people where they are, and make them feel included in the conver
 Start with plain language to explain the _what_ and _why_, then introduce technical terms when they’re ready, and never just to make yourself sound smart.
 
 The key isn’t to avoid technical language - just make it a little more meaningful.
-
----
-
-If you enjoyed this article and want to see more content about development, design, creativity and learning, then follow me on:
-
-- X: [http://www.x.com/danielcranney](http://www.x.com/danielcranney)
-- Bluesky: [https://bsky.app/profile/danielcranney.bsky.social](https://bsky.app/profile/danielcranney.bsky.social)
-- Threads: [https://www.threads.net/@daniel.cranney](https://www.threads.net/@daniel.cranney)
-- LinkedIn: [https://www.linkedin.com/in/daniel-cranney/](https://www.linkedin.com/in/daniel-cranney/)
-
-If you'd like to see my work, check out [**danielcranney.com**](https://danielcranney.com/).
