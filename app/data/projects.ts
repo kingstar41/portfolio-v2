@@ -22,7 +22,7 @@ export const projectsData = [
   },
   {
     href: "http://www.profileme.dev",
-    githubUrl: "https://github.com/danielcranney/profileme",
+    githubUrl: "https://github.com/kingstar41/profileme-dev",
     logoSrc: "/logos/profileme-logo.svg",
     title: "ProfileMe",
     description: "Create an amazing GitHub profile in two minutes",

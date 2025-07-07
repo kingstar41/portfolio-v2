@@ -1,6 +1,6 @@
 export const socialIconsData = [
   {
-    href: "http://www.x.com/danielcranney",
+    href: "http://www.x.com/kingstar9941",
     imageHeight: 36,
     imageWidth: 36,
     iconSlug: "x",
@@ -8,7 +8,7 @@ export const socialIconsData = [
     alt: "X Icon",
   },
   {
-    href: "https://www.linkedin.com/in/daniel-cranney/",
+    href: "https://www.linkedin.com/in/kingstar9941/",
     imageHeight: 36,
     imageWidth: 36,
     iconSlug: "linkedin",
@@ -16,35 +16,11 @@ export const socialIconsData = [
     alt: "LinkedIn Icon",
   },
   {
-    href: "http://www.github.com/danielcranney",
+    href: "http://www.github.com/kingstar41",
     imageHeight: 36,
     imageWidth: 36,
     iconSlug: "github",
     hex: "FFFFFF",
     alt: "GitHub Icon",
-  },
-  {
-    href: "https://www.threads.net/@daniel.cranney",
-    imageHeight: 36,
-    imageWidth: 36,
-    iconSlug: "threads",
-    hex: "FFFFFF",
-    alt: "Threads Icon",
-  },
-  {
-    href: "https://www.youtube.com/@danielcranney",
-    imageHeight: 36,
-    imageWidth: 36,
-    iconSlug: "youtube",
-    hex: "FF0000",
-    alt: "YouTube Icon",
-  },
-  {
-    href: "https://blog.danielcranney.com/",
-    imageHeight: 36,
-    imageWidth: 36,
-    iconSlug: "hashnode",
-    hex: "2962FF",
-    alt: "Hashnode Icon",
   },
 ];

@@ -1,7 +1,6 @@
 ---
 title: "How I Overcame a Fear of Sharing My Work"
 date: "2021-10-10"
-canonical_url: "https://blog.danielcranney.com/how-i-overcame-a-fear-of-sharing-my-work"
 category: "Building"
 tags: ["Education", "Productivity"]
 ---
@@ -44,7 +43,7 @@ This behaviour is a common trap that most of us fall into at one point or anothe
 
 If you had worn that outfit, or admitted you secretly dance around your bedroom miming Whitney Houston’s greatest hits into a hairbrush, would anybody have _really_ thought of you any differently? Probably not. But you let it stop you, anyway.
 
-To put it bluntly, we think other people care far more about what we do and how we do it than they actually do; a phenomenon known as the _[spotlight effect](https://thedecisionlab.com/biases/spotlight-effect/)_ in social science circles.
+To put it bluntly, we think other people care far more about what we do and how we do it than they actually do; a phenomenon known as the spotlight effect in social science circles.
 
 The spotlight effect, like other cognitive biases, shows us that our perception of ourselves and the world around us is often out of sync with reality, and how others view us. It's natural to focus on our flaws, inadequacies and shortcomings, but also important to understand that it's highly likely other people don't even notice them at all.
 
@@ -118,10 +117,9 @@ Others complimenting your work can be a huge confidence boost and so if you can 
 
 ## Start today
 
-Sharing your development work isn't easy, but the more you do it, the easier it gets. The [#100daysofcode](https://twitter.com/search?q=%23100DaysOfCode&src=hashtag_click) challenge is a great way to hold yourself accountable, and get used to showcasing your work, warts and all.
+Sharing your development work isn't easy, but the more you do it, the easier it gets. The #100daysofcode challenge is a great way to hold yourself accountable, and get used to showcasing your work, warts and all.
 
 So go for it! Start sharing with others, you'll be surprised how good it feels.
 
 Hopefully this article will give you that push you need to start showing others what you do, and maybe one day you'll actually enjoy it, too!
 
-**If you enjoyed this article and want to see what I'm working on (or read more content related to web development, design, creativity and learning) then follow me on Twitter at [http://www.twitter.com/danielcranney](http://www.twitter.com/danielcranney) .**

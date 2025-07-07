@@ -6,13 +6,13 @@ export default function MainProfilePicture() {
     <Link href="/" className="flex flex-col items-center gap-y-4">
       <div className="bg-accent rounded-full w-40 h-40 overflow-hidden">
         <Image
-          src="/pfp.png"
+          src="/profile_me.png"
           width={500}
           height={500}
-          alt="Daniel Cranney Headshot"
+          alt="Zef Lako Headshot"
         />
       </div>
-      <h3 className="mb-0 font-extrabold text-3xl">Daniel Cranney</h3>
+      <h3 className="mb-0 font-extrabold text-3xl">Zef Lako</h3>
     </Link>
   );
 }

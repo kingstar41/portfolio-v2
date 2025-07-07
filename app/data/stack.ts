@@ -4,11 +4,11 @@ export const stackIconsData = [
     href: "https://en.wikipedia.org/wiki/HTML5",
     hex: "E34F26",
   },
-  {
-    iconSlug: "css3",
-    href: "https://w3schools.com/css",
-    hex: "1572B6",
-  },
+  // {
+  //   iconSlug: "css3",
+  //   href: "https://w3schools.com/css",
+  //   hex: "1572B6",
+  // },
   {
     iconSlug: "react",
     href: "https://react.dev/",
@@ -39,11 +39,11 @@ export const stackIconsData = [
     href: "http://www.supabase.com",
     hex: "3FCF8E",
   },
-  {
-    iconSlug: "adobephotoshop",
-    href: "http://www.adobe.com",
-    hex: "31A8FF",
-  },
+  // {
+  //   iconSlug: "adobephotoshop",
+  //   href: "http://www.adobe.com",
+  //   hex: "31A8FF",
+  // },
   // {
   //   iconSlug: "adobeillustrator",
   //   href: "http://www.adobe.com",

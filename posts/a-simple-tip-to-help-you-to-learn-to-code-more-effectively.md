@@ -1,7 +1,6 @@
 ---
 title: "A Simple Tip to Help you Learn to Code More Effectively"
 date: "2021-08-06"
-canonical_url: "https://blog.danielcranney.com/a-simple-tip-to-help-you-learn-to-code-more-effectively"
 category: "Learning"
 tags: ["Education", "Productivity"]
 ---
@@ -80,7 +79,7 @@ Imagine the challenge is to multiply a given number by two. You might do it in t
 
 At level three, you might not be able to write a huge amount of code, but you've got a good grip on some of the key concepts and can apply them in new situations.
 
-If you're a beginner, check out some of these [coding challenges](https://hackernoon.com/javascript-practical-coding-challenges-for-beginners-4bq3ugr) to see how much you've learned.
+If you're a beginner, check out some of these coding challenges to see how much you've learned.
 
 ### Level four: Analysing
 
@@ -125,5 +124,3 @@ Of course it's important that you put your knowledge into practice and build pro
 Take some time to study coding. Read documentation, study other people's code on Github, consider alternative approaches, and try to be conscious of which of Bloom's levels you're on so that you know what comes next.
 
 Hopefully you'll find this tip helps you to learn to code more effectively, and to know there's a **lot** more to learning to code than just building.
-
-\*\*If you enjoyed this article and want to more content related to web development, design and learning then follow me on Twitter at [http://www.twitter.com/danielcranney](https://twitter.com/danielcranney). \*\*

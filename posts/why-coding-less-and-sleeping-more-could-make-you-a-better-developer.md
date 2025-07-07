@@ -1,7 +1,6 @@
 ---
 title: "Why Coding Less and Sleeping More Could Make You a Better Developer"
 date: "2021-10-23"
-canonical_url: "https://blog.danielcranney.com/why-coding-less-and-sleeping-more-could-make-you-a-better-developer"
 category: "Productivity"
 tags: ["Education", "Productivity"]
 ---
@@ -94,13 +93,3 @@ American Author John Steinbeck famously said, "It is a common experience that a 
 Whether it's moving newly-learned information from short-term to long-term storage, re-organising existing memories, or continuing to think through a difficult problem long after we've closed our eyes for the night, the committee of sleep has got you covered.
 
 So next time you come across a coding problem you just can't seem to solve, try stepping away from the screen and getting some sleep, you might just be surprised how well it works.
-
-**If you enjoyed this article and want to see more content about development, design, creativity and learning then follow me on Twitter at [http://www.twitter.com/danielcranney](http://www.twitter.com/danielcranney) .**
-
-**Sources and Studies**
-
-Sanders, K. E. G., Osburn, S., Paller, K. A., & Beeman, M. (2019) Targeted Memory Reactivation During Sleep Improves Next-day Problem Solving. Psychological Science. 30 (11).
-
-Sio, U. N., Monaghan, P., Ormerod, T. (2013). Sleep on it, but only if it is difficult: Effects of sleep on problem solving. Memory & Cognition, 41, 159–166.
-
-Walker, M. (2017). Why We Sleep. [London]: Penguin Books.

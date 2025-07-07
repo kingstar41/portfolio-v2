@@ -7,7 +7,7 @@ export default function CommentsSection() {
       <h3 className="mt-8">Comments</h3>
       <Giscus
         id="comments"
-        repo="danielcranney/portfolio-v2"
+        repo="kingstar41/portfolio-v2"
         repoId="R_kgDOLrHhBg="
         category="Announcements"
         categoryId="DIC_kwDOLrHhBs4CnvOY"
