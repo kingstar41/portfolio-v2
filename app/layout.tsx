@@ -32,7 +32,7 @@ export default function RootLayout({
 
             <div className="flex flex-col items-center gap-y-0.5">
               <p className="flex text-base">
-                Semi-Senior Frontend Developer | 5+ years of experience
+                Senior Frontend Developer | 5+ years of experience
               </p>
             </div>
 
